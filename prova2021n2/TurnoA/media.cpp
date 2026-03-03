@@ -4,14 +4,9 @@ using namespace std;
 
 int main() {
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-
-  int a, b;
-  cin >> a >> b;
-
-  int res = (a*2) - b;
-  cout << res << "\n";
-  return 0;      
-
-  
-}
+  cin.tie(nullptr);
+  long long a, b;
+  std::cin >> a >> b;
+  cout << (2 * a - b) << "\n";
+  return 0;
+};
