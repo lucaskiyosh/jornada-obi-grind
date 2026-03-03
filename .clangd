@@ -1,0 +1,10 @@
+CompileFlags:
+  Add:
+    - -std=c++20
+    - -xc++
+    - -Wall
+    # Força usar só os paths do GCC 14 (evita misturar com 13)
+    - -nostdinc++  # desabilita stdlib default do clangd
+    - -isystem/usr/include/c++/14
+    - -isystem/usr/include/x86_64-linux-gnu/c++/14
+    - -isystem/usr/include/c++/14/backward
