@@ -4,13 +4,14 @@
 using namespace std;
 
 int main() {
-  ios_base::sync_with_stdio();
+  ios_base::sync_with_stdio(false);
   cin.tie(NULL);
   int n, m;
   if (!(cin >> n >> m))
     return 0;
 
   vector<int> proibido(n, 0);
+
   for (int i = 0; i < m; i++) {
     int u, v;
     cin >> u >> v;
